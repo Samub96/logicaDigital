@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : reto.vhf
--- /___/   /\     Timestamp : 10/22/2023 17:00:49
+-- /___/   /\     Timestamp : 10/22/2023 17:08:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -134,7 +134,6 @@ architecture BEHAVIORAL of reto is
    signal XLXN_80               : std_logic;
    signal XLXN_82               : std_logic;
    signal XLXN_102              : std_logic;
-   signal XLXN_106              : std_logic;
    signal XLXN_114              : std_logic;
    signal XLXN_126              : std_logic;
    signal XLXN_127              : std_logic;
@@ -160,6 +159,7 @@ architecture BEHAVIORAL of reto is
    signal XLXN_247              : std_logic;
    signal XLXN_257              : std_logic;
    signal XLXN_310              : std_logic;
+   signal XLXN_319              : std_logic;
    signal XLXI_29_I0_openSignal : std_logic;
    component AND3B2
       port ( I0 : in    std_logic; 
@@ -272,8 +272,8 @@ begin
    
    XLXI_29 : OR6_MXILINX_reto
       port map (I0=>XLXI_29_I0_openSignal,
-                I1=>XLXN_75,
-                I2=>XLXN_106,
+                I1=>XLXN_319,
+                I2=>XLXN_75,
                 I3=>XLXN_102,
                 I4=>XLXN_82,
                 I5=>XLXN_72,
@@ -288,19 +288,19 @@ begin
       port map (I0=>d,
                 I1=>c,
                 I2=>a,
-                O=>XLXN_75);
+                O=>XLXN_319);
    
    XLXI_32 : AND3B1
       port map (I0=>a,
                 I1=>d,
-                I2=>b,
+                I2=>c,
                 O=>XLXN_102);
    
    XLXI_33 : AND3B1
       port map (I0=>c,
                 I1=>d,
                 I2=>a,
-                O=>XLXN_106);
+                O=>XLXN_75);
    
    XLXI_35 : AND2B1
       port map (I0=>a,
