@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-10-20T17:12:05</DateModified>
+  <DateModified>2023-10-22T15:02:08</DateModified>
   <ModuleName>reto</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Family/Desktop/logica/retosegmentos/iseconfig/reto.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Family/Desktop/logica/retosegmentos\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/iseconfig/reto.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos\</ImplementationReportsDirectory>
   <DateInitialized>2023-10-17T15:05:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

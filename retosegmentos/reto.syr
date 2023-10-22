@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: reto.prj
 
@@ -104,7 +104,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Family/Desktop/logica/retosegmentos/reto.vhf" in Library work.
+Compiling vhdl file "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf" in Library work.
 Entity <or6_mxilinx_reto> compiled.
 Entity <or6_mxilinx_reto> (Architecture <behavioral>) compiled.
 Entity <reto> compiled.
@@ -122,8 +122,8 @@ Analyzing hierarchy for entity <OR6_MXILINX_reto> in library <work> (architectur
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <reto> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_21_0" for instance <XLXI_21> in unit <reto>.
-    Set user-defined property "HU_SET =  XLXI_29_1" for instance <XLXI_29> in unit <reto>.
+    Set user-defined property "HU_SET =  XLXI_21_1" for instance <XLXI_21> in unit <reto>.
+    Set user-defined property "HU_SET =  XLXI_29_0" for instance <XLXI_29> in unit <reto>.
 Entity <reto> analyzed. Unit <reto> generated.
 
 Analyzing Entity <OR6_MXILINX_reto> in library <work> (Architecture <behavioral>).
@@ -139,13 +139,13 @@ Entity <OR6_MXILINX_reto> analyzed. Unit <OR6_MXILINX_reto> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <OR6_MXILINX_reto>.
-    Related source file is "C:/Users/Family/Desktop/logica/retosegmentos/reto.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
 WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <OR6_MXILINX_reto> synthesized.
 
 
 Synthesizing Unit <reto>.
-    Related source file is "C:/Users/Family/Desktop/logica/retosegmentos/reto.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
 WARNING:Xst:653 - Signal <XLXI_29_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <reto> synthesized.
 
@@ -270,7 +270,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 9.064ns
+   Maximum combinational path delay: 9.026ns
 
 Timing Detail:
 --------------
@@ -280,7 +280,7 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 83 / 7
 -------------------------------------------------------------------------
-Delay:               9.064ns (Levels of Logic = 6)
+Delay:               9.026ns (Levels of Logic = 6)
   Source:            a (PAD)
   Destination:       sa (PAD)
 
@@ -288,7 +288,7 @@ Delay:               9.064ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            23   1.218   1.202  a_IBUF (a_IBUF)
+     IBUF:I->O            22   1.218   1.164  a_IBUF (a_IBUF)
      AND2B1:I1->O          1   0.704   0.420  adn (XLXN_80)
      begin scope: 'XLXI_21'
      OR3:I0->O             1   0.704   0.420  I_36_88 (I35)
@@ -296,18 +296,18 @@ Delay:               9.064ns (Levels of Logic = 6)
      end scope: 'XLXI_21'
      OBUF:I->O                 3.272          sa_OBUF (sa)
     ----------------------------------------
-    Total                      9.064ns (6.602ns logic, 2.462ns route)
-                                       (72.8% logic, 27.2% route)
+    Total                      9.026ns (6.602ns logic, 2.424ns route)
+                                       (73.1% logic, 26.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.42 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.69 secs
  
 --> 
 
-Total memory usage is 4530780 kilobytes
+Total memory usage is 4531172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : reto.vhf
--- /___/   /\     Timestamp : 10/19/2023 17:22:24
+-- /___/   /\     Timestamp : 10/22/2023 17:00:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Family/Desktop/logica/retosegmentos/reto.vhf -w C:/Users/Family/Desktop/logica/retosegmentos/reto.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf -w C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.sch
 --Design Name: reto
 --Device: spartan3e
 --Purpose:
@@ -136,7 +136,6 @@ architecture BEHAVIORAL of reto is
    signal XLXN_102              : std_logic;
    signal XLXN_106              : std_logic;
    signal XLXN_114              : std_logic;
-   signal XLXN_125              : std_logic;
    signal XLXN_126              : std_logic;
    signal XLXN_127              : std_logic;
    signal XLXN_128              : std_logic;
@@ -149,17 +148,18 @@ architecture BEHAVIORAL of reto is
    signal XLXN_160              : std_logic;
    signal XLXN_161              : std_logic;
    signal XLXN_162              : std_logic;
-   signal XLXN_163              : std_logic;
-   signal XLXN_164              : std_logic;
    signal XLXN_165              : std_logic;
    signal XLXN_166              : std_logic;
    signal XLXN_172              : std_logic;
    signal XLXN_173              : std_logic;
-   signal XLXN_174              : std_logic;
-   signal XLXN_175              : std_logic;
    signal XLXN_176              : std_logic;
    signal XLXN_193              : std_logic;
    signal XLXN_194              : std_logic;
+   signal XLXN_211              : std_logic;
+   signal XLXN_244              : std_logic;
+   signal XLXN_247              : std_logic;
+   signal XLXN_257              : std_logic;
+   signal XLXN_310              : std_logic;
    signal XLXI_29_I0_openSignal : std_logic;
    component AND3B2
       port ( I0 : in    std_logic; 
@@ -226,8 +226,8 @@ architecture BEHAVIORAL of reto is
    end component;
    attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_0";
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_1";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_1";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_0";
 begin
    abncn : AND3B2
       port map (I0=>c,
@@ -280,7 +280,7 @@ begin
                 O=>sb);
    
    XLXI_30 : AND2B2
-      port map (I0=>a,
+      port map (I0=>b,
                 I1=>c,
                 O=>XLXN_72);
    
@@ -320,7 +320,7 @@ begin
    XLXI_38 : AND2B1
       port map (I0=>a,
                 I1=>d,
-                O=>XLXN_125);
+                O=>XLXN_310);
    
    XLXI_39 : AND2B2
       port map (I0=>c,
@@ -329,7 +329,7 @@ begin
    
    XLXI_40 : OR5
       port map (I0=>XLXN_126,
-                I1=>XLXN_125,
+                I1=>XLXN_310,
                 I2=>XLXN_128,
                 I3=>XLXN_127,
                 I4=>XLXN_114,
@@ -383,15 +383,15 @@ begin
    XLXI_49 : OR5
       port map (I0=>XLXN_166,
                 I1=>XLXN_165,
-                I2=>XLXN_164,
-                I3=>XLXN_163,
+                I2=>XLXN_257,
+                I3=>XLXN_211,
                 I4=>XLXN_162,
                 O=>sf);
    
    XLXI_50 : OR5
       port map (I0=>XLXN_176,
-                I1=>XLXN_175,
-                I2=>XLXN_174,
+                I1=>XLXN_247,
+                I2=>XLXN_244,
                 I3=>XLXN_173,
                 I4=>XLXN_172,
                 O=>sg);
@@ -429,12 +429,12 @@ begin
    XLXI_58 : AND2B1
       port map (I0=>d,
                 I1=>b,
-                O=>XLXN_163);
+                O=>XLXN_257);
    
    XLXI_59 : AND2B2
       port map (I0=>d,
                 I1=>c,
-                O=>XLXN_164);
+                O=>XLXN_211);
    
    XLXI_60 : AND2
       port map (I0=>c,
@@ -442,8 +442,8 @@ begin
                 O=>XLXN_165);
    
    XLXI_61 : AND3B2
-      port map (I0=>c,
-                I1=>a,
+      port map (I0=>a,
+                I1=>c,
                 I2=>b,
                 O=>XLXN_166);
    
@@ -466,12 +466,12 @@ begin
    XLXI_70 : AND2B1
       port map (I0=>b,
                 I1=>c,
-                O=>XLXN_174);
+                O=>XLXN_247);
    
    XLXI_72 : AND2
       port map (I0=>d,
                 I1=>a,
-                O=>XLXN_175);
+                O=>XLXN_244);
    
 end BEHAVIORAL;
 

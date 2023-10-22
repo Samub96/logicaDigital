@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\Family\Desktop\logica\retosegmentos\impact.xsl
-OUTFILE=C:\Users\Family\Desktop\logica\retosegmentos\impact.xsl
+INFILE=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos\impact.xsl
+OUTFILE=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos\impact.xsl
 FAMILY=Multiple
 PART=Multiple
-WORKINGDIR=C:\Users\Family\Desktop\logica\retosegmentos
+WORKINGDIR=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos
 LICENSE=iMPACT
 USER_INFO=iMPACT
