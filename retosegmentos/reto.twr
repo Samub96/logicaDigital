@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf
+
+Design file:              reto.ncd
+Physical constraint file: reto.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a              |sa             |   15.183|
+a              |sb             |   14.215|
+a              |sc             |   12.607|
+a              |sd             |   12.440|
+a              |se             |   12.780|
+a              |sf             |   12.391|
+a              |sg             |   13.652|
+b              |sa             |   14.079|
+b              |sb             |   13.871|
+b              |sc             |   11.851|
+b              |sd             |   11.712|
+b              |se             |   11.529|
+b              |sf             |   11.608|
+b              |sg             |   13.168|
+c              |sa             |   14.272|
+c              |sb             |   13.529|
+c              |sc             |   12.513|
+c              |sd             |   12.514|
+c              |se             |   12.293|
+c              |sf             |   12.239|
+c              |sg             |   13.714|
+d              |sa             |   14.184|
+d              |sb             |   13.976|
+d              |sc             |   12.139|
+d              |sd             |   12.110|
+d              |se             |   11.989|
+d              |sf             |   11.858|
+d              |sg             |   13.284|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 19 17:23:05 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4509 MB
+
+
+

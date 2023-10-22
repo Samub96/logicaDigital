@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/parcial/comparador.xst" -ofn "C:/Users/Family/Desktop/logica/parcial/comparador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 comparador.ngc comparador.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -w -intstyle ise -ol high -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf 
+bitgen -intstyle ise -f comparador.ut comparador.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/parcial/comparador.xst" -ofn "C:/Users/Family/Desktop/logica/parcial/comparador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc comparador.ucf -p xc3s500e-fg320-4 comparador.ngc comparador.ngd  
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/parcial/comparador.xst" -ofn "C:/Users/Family/Desktop/logica/parcial/comparador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc comparador.ucf -p xc3s500e-fg320-4 comparador.ngc comparador.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -w -intstyle ise -ol high -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf -ucf comparador.ucf 
+bitgen -intstyle ise -f comparador.ut comparador.ncd 

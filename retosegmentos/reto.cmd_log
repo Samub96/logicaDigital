@@ -1,0 +1,71 @@
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+xst -intstyle ise -ifn "C:/Users/Family/Desktop/logica/retosegmentos/reto.xst" -ofn "C:/Users/Family/Desktop/logica/retosegmentos/reto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reto.ucf -p xc3s500e-fg320-4 reto.ngc reto.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reto_map.ncd reto.ngd reto.pcf 
+par -w -intstyle ise -ol high -t 1 reto_map.ncd reto.ncd reto.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reto.twx reto.ncd -o reto.twr reto.pcf -ucf reto.ucf 
+bitgen -intstyle ise -f reto.ut reto.ncd 

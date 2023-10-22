@@ -1,0 +1,9 @@
+V3 6
+FL C:/Users/Family/Desktop/logica/parcial/comparador.vhf 2023/10/05.14:32:09 P.20131013
+EN work/comparador 1696534854 \
+      FL C:/Users/Family/Desktop/logica/parcial/comparador.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/comparador/BEHAVIORAL 1696534855 \
+      FL C:/Users/Family/Desktop/logica/parcial/comparador.vhf EN work/comparador 1696534854 \
+      CP XOR2 CP NOR2

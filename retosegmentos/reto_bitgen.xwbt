@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Family\Desktop\logica\retosegmentos\reto.ncd
+OUTFILE=C:\Users\Family\Desktop\logica\retosegmentos\reto.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Family\Desktop\logica\retosegmentos
+LICENSE=WebPack
+USER_INFO=210703355_0_0_935
