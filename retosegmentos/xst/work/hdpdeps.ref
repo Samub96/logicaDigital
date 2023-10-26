@@ -1,18 +1,19 @@
-V3 18
+V3 19
 FL C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf 2023/10/22.17:08:57 P.20131013
-EN work/OR6_MXILINX_reto 1698012541 \
-      FL C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
+FL C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf 2023/10/24.14:00:01 P.20131013
+EN work/OR6_MXILINX_reto 1698174007 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/OR6_MXILINX_reto/BEHAVIORAL 1698012542 \
-      FL C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
-      EN work/OR6_MXILINX_reto 1698012541 CP OR4 CP OR3 CP FMAP
-EN work/reto 1698012543 \
-      FL C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
+AR work/OR6_MXILINX_reto/BEHAVIORAL 1698174008 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
+      EN work/OR6_MXILINX_reto 1698174007 CP OR4 CP OR3 CP FMAP
+EN work/reto 1698174009 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/reto/BEHAVIORAL 1698012544 \
-      FL C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
-      EN work/reto 1698012543 CP AND3B2 CP AND2B1 CP AND3B1 CP AND2 CP AND2B2 \
+AR work/reto/BEHAVIORAL 1698174010 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf \
+      EN work/reto 1698174009 CP AND3B2 CP AND2B1 CP AND3B1 CP AND2 CP AND2B2 \
       CP OR6_MXILINX_reto CP AND3B3 CP OR5
 FL C:/Users/Family/Desktop/logica/retosegmentos/reto.vhf 2023/10/19.17:22:24 P.20131013

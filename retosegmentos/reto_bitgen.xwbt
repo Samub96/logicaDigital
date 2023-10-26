@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos\reto.ncd
-OUTFILE=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos\reto.bit
+INFILE=C:\Users\Family\Desktop\logica\logicaDigital\retosegmentos\reto.ncd
+OUTFILE=C:\Users\Family\Desktop\logica\logicaDigital\retosegmentos\reto.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\Admin\Desktop\logica\logicaDigital\retosegmentos
+WORKINGDIR=C:\Users\Family\Desktop\logica\logicaDigital\retosegmentos
 LICENSE=WebPack
 USER_INFO=210703355_0_0_935

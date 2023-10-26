@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: reto.prj
 
@@ -104,7 +104,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf" in Library work.
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_reto is now defined in a different file.  It was defined in "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf", and is now defined in "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_reto/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf", and is now defined in "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+WARNING:HDLParsers:3607 - Unit work/reto is now defined in a different file.  It was defined in "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf", and is now defined in "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+WARNING:HDLParsers:3607 - Unit work/reto/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf", and is now defined in "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+Compiling vhdl file "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf" in Library work.
 Entity <or6_mxilinx_reto> compiled.
 Entity <or6_mxilinx_reto> (Architecture <behavioral>) compiled.
 Entity <reto> compiled.
@@ -139,13 +143,13 @@ Entity <OR6_MXILINX_reto> analyzed. Unit <OR6_MXILINX_reto> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <OR6_MXILINX_reto>.
-    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
 WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <OR6_MXILINX_reto> synthesized.
 
 
 Synthesizing Unit <reto>.
-    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
+    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf".
 WARNING:Xst:653 - Signal <XLXI_29_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <reto> synthesized.
 
@@ -302,14 +306,14 @@ Delay:               9.026ns (Levels of Logic = 6)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.72 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.33 secs
  
 --> 
 
-Total memory usage is 4531064 kilobytes
+Total memory usage is 4530788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

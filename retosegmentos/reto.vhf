@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : reto.vhf
--- /___/   /\     Timestamp : 10/22/2023 17:08:57
+-- /___/   /\     Timestamp : 10/24/2023 14:00:00
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.vhf -w C:/Users/Admin/Desktop/logica/logicaDigital/retosegmentos/reto.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.vhf -w C:/Users/Family/Desktop/logica/logicaDigital/retosegmentos/reto.sch
 --Design Name: reto
 --Device: spartan3e
 --Purpose:
