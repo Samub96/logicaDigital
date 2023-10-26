@@ -1,0 +1,99 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Family\Desktop\logica\test
+#Date/Time:
+#:T   Thu Oct 26 02:15:50 2023
+#------------------------------
+	#Reading test_map.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "test" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2023.10.26.07.15.43
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CLK_50MHZ'
+	#3
+unselect -all
+	#4
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#5
+unselect -all
+	#6
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#7
+unselect -all
+	#8
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#9
+post attr
+	#10
+unpost comp "CLK_50MHZ"
+	#11
+unselect -all
+	#12
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#13
+post goto
+	#14
+select pin "C9.I"
+	#15
+unselect -all
+	#16
+select -k pin "C9.I"
+	#17
+unselect -all
+	#18
+select -k pin "C9.I"
+	#19
+unselect pin "C9.I"
+	#20
+select pin "C9.I"
+	#21
+unselect -all
+	#22
+select -k pin "C9.I"
+	#23
+unpost goto
+	#24
+unselect -all
+	#25
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#26
+unselect -all
+	#27
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#28
+post attr
+	#29
+unpost comp "CLK_50MHZ"
+	#30
+delay
+	#ERROR:FPGAEditor:201 - The delay command can be used only when pins or nets are selected
+	#.Select two pins, or one or more nets and try again.
+	#31
+unselect -all
+	#32
+select comp 'CLK_50MHZ'
+	#comp "CLK_50MHZ",  site "C9",  bonded type = IBUF,  pad name = PAD27,  pin name = C9  (RPM grid X67Y94)
+	#33
+post attr main
+	#Getting available speed grades of the device...
+	#34
+setattr main  clknets_period 10000000:low::::
+	#35
+unpost main
+	#36
+delay
+	#ERROR:FPGAEditor:201 - The delay command can be used only when pins or nets are selected
+	#.Select two pins, or one or more nets and try again.

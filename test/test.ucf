@@ -1,0 +1,25 @@
+# ==== Clock inputs ====
+NET "CLK_50MHZ" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+
+# ==== Slide Switches (SW) ====
+NET "ia" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP ;
+NET "ib" LOC = "L14" | IOSTANDARD = LVTTL | PULLUP ;
+NET "ic" LOC = "H18" | IOSTANDARD = LVTTL | PULLUP ;
+NET "id" LOC = "N17" | IOSTANDARD = LVTTL | PULLUP ;
+
+# ==== 6-pin header J4 ====
+NET "S1" LOC = "D7" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "S2" LOC = "C7" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+
+# ==== Pushbuttons (BTN) ====
+NET "N1" LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN ; 
+NET "N2" LOC = "H13" | IOSTANDARD = LVTTL | PULLDOWN ;
+
+# ==== 6-pin header J1 ====
+NET "sa" LOC = "D5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "sb" LOC = "C5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "sc" LOC = "A6" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "sd" LOC = "F7" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "se" LOC = "B6" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "sf" LOC = "A4" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "sg" LOC = "B4" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;

@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 26 02:15:44 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "N1" LOCATE = SITE "D18" LEVEL 1;
+COMP "ia" LOCATE = SITE "L13" LEVEL 1;
+COMP "N2" LOCATE = SITE "H13" LEVEL 1;
+COMP "ib" LOCATE = SITE "L14" LEVEL 1;
+COMP "ic" LOCATE = SITE "H18" LEVEL 1;
+COMP "id" LOCATE = SITE "N17" LEVEL 1;
+COMP "S1" LOCATE = SITE "D7" LEVEL 1;
+COMP "S2" LOCATE = SITE "C7" LEVEL 1;
+COMP "sa" LOCATE = SITE "D5" LEVEL 1;
+COMP "sb" LOCATE = SITE "C5" LEVEL 1;
+COMP "sc" LOCATE = SITE "A6" LEVEL 1;
+COMP "sd" LOCATE = SITE "F7" LEVEL 1;
+COMP "se" LOCATE = SITE "B6" LEVEL 1;
+COMP "sf" LOCATE = SITE "A4" LEVEL 1;
+COMP "sg" LOCATE = SITE "B4" LEVEL 1;
+COMP "CLK_50MHZ" LOCATE = SITE "C9" LEVEL 1;
+SCHEMATIC END;
+
