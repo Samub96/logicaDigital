@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-10-05T14:19:38</DateModified>
+  <DateModified>2023-11-04T17:59:42</DateModified>
   <ModuleName>comparador</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Family/Desktop/logica/parcial/iseconfig/comparador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Family/Desktop/logica/parcial</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Admin/Desktop/logica/logicaDigital/parcial/iseconfig/comparador.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Admin/Desktop/logica/logicaDigital/parcial\</ImplementationReportsDirectory>
   <DateInitialized>2023-10-05T14:19:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

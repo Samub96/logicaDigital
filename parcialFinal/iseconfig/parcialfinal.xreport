@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-11-03T16:54:17</DateModified>
+  <DateModified>2023-11-04T18:42:04</DateModified>
   <ModuleName>parcialfinal</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Family/Desktop/logica/logicaDigital/parcialFinal/iseconfig/parcialfinal.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Family/Desktop/logica/logicaDigital/parcialFinal</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Admin/Desktop/logica/logicaDigital/parcialFinal/iseconfig/parcialfinal.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Admin/Desktop/logica/logicaDigital/parcialFinal\</ImplementationReportsDirectory>
   <DateInitialized>2023-11-03T16:54:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
