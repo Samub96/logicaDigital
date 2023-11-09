@@ -10,75 +10,25 @@
         <signal name="XLXN_10" />
         <signal name="Qnegado" />
         <signal name="Dout" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_31" />
-        <signal name="XLXN_32" />
-        <signal name="XLXN_35" />
-        <signal name="XLXN_37" />
-        <signal name="XLXN_41" />
-        <signal name="XLXN_43" />
-        <signal name="XLXN_47" />
-        <signal name="XLXN_49" />
-        <signal name="XLXN_51" />
-        <signal name="XLXN_52" />
-        <signal name="XLXN_61" />
-        <signal name="XLXN_63" />
-        <signal name="XLXN_65" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_70" />
-        <signal name="XLXN_74" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_80" />
-        <signal name="XLXN_82" />
-        <signal name="XLXN_84" />
-        <signal name="XLXN_85" />
-        <signal name="XLXN_88" />
-        <signal name="XLXN_90" />
         <signal name="XLXN_39" />
         <signal name="XLXN_40" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_42" />
-        <signal name="XLXN_96" />
         <signal name="XLXN_44" />
-        <signal name="XLXN_98" />
-        <signal name="XLXN_101" />
-        <signal name="XLXN_103" />
-        <signal name="XLXN_107" />
-        <signal name="XLXN_109" />
-        <signal name="XLXN_113" />
-        <signal name="XLXN_115" />
         <signal name="XLXN_25" />
         <signal name="XLXN_26" />
-        <signal name="XLXN_119" />
         <signal name="XLXN_30" />
-        <signal name="XLXN_121" />
         <signal name="Cout" />
-        <signal name="XLXN_123" />
-        <signal name="XLXN_124" />
         <signal name="pulso" />
-        <signal name="XLXN_126" />
-        <signal name="XLXN_127" />
         <signal name="XLXN_128" />
-        <signal name="XLXN_129" />
-        <signal name="XLXN_130" />
         <signal name="XLXN_131" />
-        <signal name="XLXN_54" />
         <signal name="XLXN_50" />
         <signal name="clk" />
-        <signal name="XLXN_48" />
         <signal name="XLXN_46" />
         <signal name="XLXN_45" />
         <signal name="XLXN_53" />
         <signal name="XLXN_136" />
-        <signal name="XLXN_155" />
         <signal name="XLXN_156" />
         <signal name="Bout" />
         <signal name="Aout" />
-        <signal name="XLXN_162" />
-        <signal name="XLXN_163" />
-        <signal name="XLXN_164" />
-        <signal name="XLXN_166" />
         <signal name="sa" />
         <signal name="sb" />
         <signal name="sc" />
@@ -87,36 +37,17 @@
         <signal name="sf" />
         <signal name="sg" />
         <signal name="bnegado" />
-        <signal name="XLXN_175" />
         <signal name="bd" />
         <signal name="bnegado_dnegado" />
-        <signal name="XLXN_178" />
         <signal name="cnegado" />
         <signal name="dnegado" />
         <signal name="cd" />
         <signal name="cnegado_denegado" />
-        <signal name="XLXN_183" />
-        <signal name="XLXN_184" />
         <signal name="c_dnegado" />
-        <signal name="XLXN_186" />
-        <signal name="XLXN_187" />
-        <signal name="XLXN_188" />
-        <signal name="XLXN_189" />
         <signal name="bnegado_c" />
         <signal name="b_cnegado_d" />
-        <signal name="XLXN_193" />
         <signal name="b_cnegado" />
-        <signal name="XLXN_195" />
-        <signal name="XLXN_196" />
-        <signal name="XLXN_197" />
-        <signal name="XLXN_200" />
-        <signal name="XLXN_201" />
-        <signal name="XLXN_202" />
-        <signal name="XLXN_203" />
-        <signal name="XLXN_204" />
-        <signal name="XLXN_205" />
         <signal name="dnegado_b" />
-        <signal name="XLXN_207" />
         <port polarity="Input" name="pulso" />
         <port polarity="Input" name="clk" />
         <port polarity="Output" name="sa" />
@@ -917,8 +848,7 @@
             <wire x2="6704" y1="1024" y2="1040" x1="6704" />
             <wire x2="6912" y1="1024" y2="1024" x1="6704" />
             <wire x2="6912" y1="1024" y2="1296" x1="6912" />
-            <wire x2="6912" y1="1296" y2="1496" x1="6912" />
-            <wire x2="6912" y1="1496" y2="1504" x1="6912" />
+            <wire x2="6912" y1="1296" y2="1504" x1="6912" />
             <wire x2="6912" y1="1504" y2="1712" x1="6912" />
             <wire x2="7120" y1="1712" y2="1712" x1="6912" />
             <wire x2="7104" y1="1504" y2="1504" x1="6912" />

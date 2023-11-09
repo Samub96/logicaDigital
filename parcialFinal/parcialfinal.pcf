@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 09 14:47:35 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "D18" LEVEL 1;
+COMP "sa" LOCATE = SITE "B4" LEVEL 1;
+COMP "sb" LOCATE = SITE "A4" LEVEL 1;
+COMP "sc" LOCATE = SITE "D5" LEVEL 1;
+COMP "sd" LOCATE = SITE "C5" LEVEL 1;
+COMP "se" LOCATE = SITE "A6" LEVEL 1;
+COMP "sf" LOCATE = SITE "B6" LEVEL 1;
+COMP "sg" LOCATE = SITE "E7" LEVEL 1;
+COMP "pulso" LOCATE = SITE "L13" LEVEL 1;
+SCHEMATIC END;
+

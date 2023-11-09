@@ -1,0 +1,10 @@
+V3 12
+FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.vhf 2023/11/09.14:42:17 P.20131013
+EN work/parcialfinal 1699558942 \
+      FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/parcialfinal/BEHAVIORAL 1699558943 \
+      FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.vhf \
+      EN work/parcialfinal 1699558942 CP AND3 CP NOR2 CP AND2 CP OR2 CP INV CP OR4 \
+      CP OR3 CP OR5

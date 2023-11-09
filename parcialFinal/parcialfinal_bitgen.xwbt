@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\1110362035\Desktop\logicaDigital-main\logicaDigital-main\parcialFinal\parcialfinal.ncd
+OUTFILE=C:\Users\1110362035\Desktop\logicaDigital-main\logicaDigital-main\parcialFinal\parcialfinal.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\1110362035\Desktop\logicaDigital-main\logicaDigital-main\parcialFinal
+LICENSE=WebPack
+USER_INFO=210703355_0_0_935
