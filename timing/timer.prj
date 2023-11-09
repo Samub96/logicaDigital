@@ -1,0 +1,3 @@
+vhdl work "digi_clk.vhd"
+vhdl work "decoderBCD4to7segments.vhd"
+vhdl work "timer.vhf"

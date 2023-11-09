@@ -1,0 +1,5 @@
+MODULE timer
+	SUBMODULE digi_clk
+		INSTANCE XLXI_4
+	SUBMODULE decoderBCD4to7segments
+		INSTANCE XLXI_8

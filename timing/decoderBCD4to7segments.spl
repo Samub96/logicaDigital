@@ -1,0 +1,14 @@
+[Inputs]
+x3
+x2
+x1
+x0
+[Outputs]
+a
+b
+c
+d
+e
+f
+g
+[BiDir]

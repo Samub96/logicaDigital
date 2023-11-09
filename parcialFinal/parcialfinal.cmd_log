@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.xst" -ofn "C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 parcialfinal.ngc parcialfinal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o parcialfinal_map.ncd parcialfinal.ngd parcialfinal.pcf 
+par -w -intstyle ise -ol high -t 1 parcialfinal_map.ncd parcialfinal.ncd parcialfinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml parcialfinal.twx parcialfinal.ncd -o parcialfinal.twr parcialfinal.pcf 
+bitgen -intstyle ise -f parcialfinal.ut parcialfinal.ncd 
+xst -intstyle ise -ifn "C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.xst" -ofn "C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/parcialFinal/parcialfinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc codigo.ucf -p xc3s500e-fg320-4 parcialfinal.ngc parcialfinal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o parcialfinal_map.ncd parcialfinal.ngd parcialfinal.pcf 
+par -w -intstyle ise -ol high -t 1 parcialfinal_map.ncd parcialfinal.ncd parcialfinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml parcialfinal.twx parcialfinal.ncd -o parcialfinal.twr parcialfinal.pcf -ucf codigo.ucf 
+bitgen -intstyle ise -f parcialfinal.ut parcialfinal.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc codigo.ucf -p xc3s500e-fg320-4 parcialfinal.ngc parcialfinal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o parcialfinal_map.ncd parcialfinal.ngd parcialfinal.pcf 
+par -w -intstyle ise -ol high -t 1 parcialfinal_map.ncd parcialfinal.ncd parcialfinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml parcialfinal.twx parcialfinal.ncd -o parcialfinal.twr parcialfinal.pcf -ucf codigo.ucf 
+bitgen -intstyle ise -f parcialfinal.ut parcialfinal.ncd 

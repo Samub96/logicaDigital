@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="cb4cled">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2000-1-1T10:10:10</timestamp>
+    <attr value="CB4CLED_MXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: MXILINX" name="Level" />
+    <attr value="CB4CLED_MXILINX" name="VhdlModel" />
+    <attr value="2.0.1" name="Libver" />
+    <pin polarity="Input" x="0" y="-128" name="C" />
+    <pin polarity="Input" x="0" y="-192" name="CE" />
+    <pin polarity="Input" x="0" y="-32" name="CLR" />
+    <pin polarity="Input" x="0" y="-640" name="D0" />
+    <pin polarity="Input" x="0" y="-576" name="D1" />
+    <pin polarity="Input" x="0" y="-512" name="D2" />
+    <pin polarity="Input" x="0" y="-448" name="D3" />
+    <pin polarity="Input" x="0" y="-256" name="L" />
+    <pin polarity="Input" x="0" y="-320" name="UP" />
+    <pin polarity="Output" x="384" y="-192" name="CEO" />
+    <pin polarity="Output" x="384" y="-640" name="Q0" />
+    <pin polarity="Output" x="384" y="-576" name="Q1" />
+    <pin polarity="Output" x="384" y="-512" name="Q2" />
+    <pin polarity="Output" x="384" y="-448" name="Q3" />
+    <pin polarity="Output" x="384" y="-128" name="TC" />
+    <graph>
+        <rect width="256" x="64" y="-704" height="640" />
+        <line x2="64" y1="-256" y2="-256" x1="0" />
+        <line x2="320" y1="-192" y2="-192" x1="384" />
+        <line x2="320" y1="-448" y2="-448" x1="384" />
+        <line x2="320" y1="-512" y2="-512" x1="384" />
+        <line x2="320" y1="-576" y2="-576" x1="384" />
+        <line x2="320" y1="-640" y2="-640" x1="384" />
+        <line x2="64" y1="-448" y2="-448" x1="0" />
+        <line x2="64" y1="-32" y2="-32" x1="0" />
+        <line x2="64" y1="-128" y2="-128" x1="0" />
+        <line x2="64" y1="-128" y2="-144" x1="80" />
+        <line x2="80" y1="-112" y2="-128" x1="64" />
+        <line x2="64" y1="-32" y2="-32" x1="192" />
+        <line x2="192" y1="-64" y2="-32" x1="192" />
+        <line x2="64" y1="-512" y2="-512" x1="0" />
+        <line x2="64" y1="-576" y2="-576" x1="0" />
+        <line x2="64" y1="-640" y2="-640" x1="0" />
+        <line x2="64" y1="-192" y2="-192" x1="0" />
+        <line x2="64" y1="-320" y2="-320" x1="0" />
+        <line x2="320" y1="-128" y2="-128" x1="384" />
+        <text style="fontsize:24;fontname:Arial" x="80" y="-256">L</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-192">CEO</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-448">Q3</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-512">Q2</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-576">Q1</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-640">Q0</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-448">D3</text>
+        <text style="alignment:CENTER;fontsize:24;fontname:Arial" x="192" y="-80">CLR</text>
+        <text style="alignment:CENTER;fontsize:24;fontname:Arial" x="96" y="-128">C</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-512">D2</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-576">D1</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-640">D0</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-192">CE</text>
+        <text style="fontsize:24;fontname:Arial" x="80" y="-320">UP</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-128">TC</text>
+        <text style="alignment:CENTER;fontsize:56;fontname:Arial" x="196" y="-732">CB4CLED</text>
+    </graph>
+</symbol>

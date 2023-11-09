@@ -1,0 +1,2 @@
+vhdtdtfi -lib work digi_clk.vhd -prj timing -o digi_clk.spl -module digi_clk -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digi_clk.spl C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/digi_clk.sym 
