@@ -1,0 +1,2 @@
+vhdtdtfi -lib work TLC.vhd -prj timing -o TLC.spl -module TLC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e TLC.spl C:/Users/Family/Desktop/logica/logicaDigital/timing/TLC.sym 

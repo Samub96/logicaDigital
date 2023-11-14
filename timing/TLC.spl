@@ -1,0 +1,7 @@
+[Inputs]
+Clck
+Reset
+P_B
+[Outputs]
+=Trafficlights[5:0]=
+[BiDir]

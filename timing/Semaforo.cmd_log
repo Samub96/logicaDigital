@@ -1,0 +1,5 @@
+vhdtdtfi -lib work Semaforo.vhd -prj timing -o Semaforo.spl -module Semaforo -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Semaforo.spl C:/Users/Family/Desktop/logica/logicaDigital/timing/Semaforo.sym 
+vhdtdtfi -lib work Semaforo.vhd -prj timing -o Semaforo.spl -module Semaforo -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Semaforo.spl C:/Users/Family/Desktop/logica/logicaDigital/timing/Semaforo.sym 
+vhdtdtfi -prj timing -o C:/Users/Family/Desktop/logica/logicaDigital/timing/Semaforo.vhi -module Semaforo -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Semaforo.vhd 
