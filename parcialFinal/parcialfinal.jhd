@@ -1,1 +1,3 @@
 MODULE parcialfinal
+	SUBMODULE Semaforo
+		INSTANCE XLXI_125

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 09 16:39:40 2023
+// Written by: Map P.20131013 on Wed Nov 15 13:27:18 2023
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -8,8 +8,13 @@ COMP "f" LOCATE = SITE "A4" LEVEL 1;
 COMP "led1" LOCATE = SITE "E12" LEVEL 1;
 COMP "g" LOCATE = SITE "B4" LEVEL 1;
 COMP "led2" LOCATE = SITE "F12" LEVEL 1;
+COMP "op1" LOCATE = SITE "E11" LEVEL 1;
+COMP "op2" LOCATE = SITE "C11" LEVEL 1;
 COMP "clk" LOCATE = SITE "C9" LEVEL 1;
 COMP "dir" LOCATE = SITE "L13" LEVEL 1;
+COMP "verde" LOCATE = SITE "F8" LEVEL 1;
+COMP "red" LOCATE = SITE "D7" LEVEL 1;
+COMP "amarillo" LOCATE = SITE "C7" LEVEL 1;
 COMP "reset" LOCATE = SITE "D18" LEVEL 1;
 COMP "a" LOCATE = SITE "D5" LEVEL 1;
 COMP "b" LOCATE = SITE "C5" LEVEL 1;

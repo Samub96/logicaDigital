@@ -155,6 +155,15 @@
             <arc ex="112" ey="-240" sx="192" sy="-192" r="88" cx="116" cy="-152" />
             <arc ex="48" ey="-240" sx="48" sy="-144" r="56" cx="16" cy="-192" />
         </blockdef>
+        <blockdef name="Semaforo">
+            <timestamp>2023-11-14T17:16:4</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="and3" name="XLXI_13">
             <blockpin signalname="clk" name="I0" />
             <blockpin signalname="pulso" name="I1" />
@@ -374,6 +383,13 @@
             <blockpin signalname="Dout" name="I0" />
             <blockpin signalname="Cout" name="I1" />
             <blockpin signalname="cd" name="O" />
+        </block>
+        <block symbolname="Semaforo" name="XLXI_125">
+            <blockpin name="clk" />
+            <blockpin name="reset" />
+            <blockpin name="rojo" />
+            <blockpin name="amarillo" />
+            <blockpin name="verde" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -870,5 +886,7 @@
         </branch>
         <rect style="linewidth:W;linecolor:rgb(166,202,240)" width="2220" x="5312" y="12" height="1936" />
         <text style="fontsize:36;fontname:Arial" x="5336" y="1888">DECODIFICADOR BCD A 7 SEGMENTOS </text>
+        <instance x="1264" y="2560" name="XLXI_125" orien="R0">
+        </instance>
     </sheet>
 </drawing>
