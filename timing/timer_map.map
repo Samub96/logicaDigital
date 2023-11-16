@@ -9,14 +9,14 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 15 13:27:16 2023
+Mapped Date    : Thu Nov 16 14:41:55 2023
 
 Mapping design into LUTs...
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_81 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_127 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -28,24 +28,24 @@ Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:            41 out of   9,312    1%
-  Number of 4 input LUTs:                30 out of   9,312    1%
+  Number of 4 input LUTs:                31 out of   9,312    1%
 Logic Distribution:
   Number of occupied Slices:             34 out of   4,656    1%
     Number of Slices containing only related logic:      34 out of      34 100%
     Number of Slices containing unrelated logic:          0 out of      34   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          61 out of   9,312    1%
-    Number used as logic:                30
+  Total Number of 4 input LUTs:          62 out of   9,312    1%
+    Number used as logic:                31
     Number used as a route-thru:         31
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 17 out of     232    7%
+  Number of bonded IOBs:                 18 out of     232    7%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-  Number of RPM macros:            8
-Average Fanout of Non-Clock Nets:                2.77
+  Number of RPM macros:            9
+Average Fanout of Non-Clock Nets:                2.79
 
 Peak Memory Usage:  4403 MB
 Total REAL time to MAP completion:  2 secs 

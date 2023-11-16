@@ -1,72 +1,87 @@
-V3 46
+V3 55
 FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/decoderBCD4to7segments.vhd 2023/11/09.15:53:30 P.20131013
 FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/digi_clk.vhd 2023/11/09.15:13:53 P.20131013
 FL C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/timer.vhf 2023/11/09.16:39:22 P.20131013
 FL C:/Users/Family/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd 2023/11/14.11:44:43 P.20131013
-EN work/decoderBCD4to7segments 1700072576 \
+EN work/decoderBCD4to7segments 1700163703 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/decoderBCD4to7segments/arch 1700072577 \
+AR work/decoderBCD4to7segments/arch 1700163704 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd \
-      EN work/decoderBCD4to7segments 1700072576
+      EN work/decoderBCD4to7segments 1700163703
 FL C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd 2023/11/14.11:44:43 P.20131013
-EN work/digi_clk 1700072574 \
+EN work/digi_clk 1700163701 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/digi_clk/Behavioral 1700072575 \
+AR work/digi_clk/Behavioral 1700163702 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd \
-      EN work/digi_clk 1700072574
-FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf 2023/11/15.13:22:49 P.20131013
-EN work/FTRSE_MXILINX_timer 1700072578 \
+      EN work/digi_clk 1700163701
+FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf 2023/11/16.14:41:37 P.20131013
+EN work/DEC_CC4_MXILINX_timer 1700163705 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTRSE_MXILINX_timer/BEHAVIORAL 1700072579 \
+AR work/DEC_CC4_MXILINX_timer/BEHAVIORAL 1700163706 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/FTRSE_MXILINX_timer 1700072578 CP XOR2 CP FDRE CP OR2
-EN work/CB4RE_MXILINX_timer 1700072580 \
+      EN work/DEC_CC4_MXILINX_timer 1700163705 CP MUXCY CP GND CP AND4
+EN work/AND7_MXILINX_timer 1700163707 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB4RE_MXILINX_timer/BEHAVIORAL 1700072581 \
+AR work/AND7_MXILINX_timer/BEHAVIORAL 1700163708 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/CB4RE_MXILINX_timer 1700072580 CP FTRSE_MXILINX_timer CP AND4 CP AND3 \
+      EN work/AND7_MXILINX_timer 1700163707 CP AND4 CP FMAP
+EN work/FTRSE_MXILINX_timer 1700163709 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTRSE_MXILINX_timer/BEHAVIORAL 1700163710 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      EN work/FTRSE_MXILINX_timer 1700163709 CP XOR2 CP FDRE CP OR2
+EN work/CB4RE_MXILINX_timer 1700163711 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4RE_MXILINX_timer/BEHAVIORAL 1700163712 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      EN work/CB4RE_MXILINX_timer 1700163711 CP FTRSE_MXILINX_timer CP AND4 CP AND3 \
       CP AND2 CP VCC CP GND
-EN work/M2_1B1_MXILINX_timer 1700072582 \
+EN work/M2_1B1_MXILINX_timer 1700163713 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_timer/BEHAVIORAL 1700072583 \
+AR work/M2_1B1_MXILINX_timer/BEHAVIORAL 1700163714 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/M2_1B1_MXILINX_timer 1700072582 CP AND2B2 CP OR2 CP AND2
-EN work/M2_1_MXILINX_timer 1700072584 \
-      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_timer/BEHAVIORAL 1700072585 \
-      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/M2_1_MXILINX_timer 1700072584 CP AND2B1 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_timer 1700072586 \
+      EN work/M2_1B1_MXILINX_timer 1700163713 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_timer 1700163715 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_timer/BEHAVIORAL 1700072587 \
+AR work/M2_1_MXILINX_timer/BEHAVIORAL 1700163716 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/FTCLEX_MXILINX_timer 1700072586 CP M2_1_MXILINX_timer CP XOR2 CP FDCE
-EN work/CB4CLED_MXILINX_timer 1700072588 \
+      EN work/M2_1_MXILINX_timer 1700163715 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_timer 1700163717 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB4CLED_MXILINX_timer/BEHAVIORAL 1700072589 \
+AR work/FTCLEX_MXILINX_timer/BEHAVIORAL 1700163718 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/CB4CLED_MXILINX_timer 1700072588 CP FTCLEX_MXILINX_timer \
+      EN work/FTCLEX_MXILINX_timer 1700163717 CP M2_1_MXILINX_timer CP XOR2 CP FDCE
+EN work/CB4CLED_MXILINX_timer 1700163719 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CLED_MXILINX_timer/BEHAVIORAL 1700163720 \
+      FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
+      EN work/CB4CLED_MXILINX_timer 1700163719 CP FTCLEX_MXILINX_timer \
       CP M2_1_MXILINX_timer CP M2_1B1_MXILINX_timer CP VCC CP AND2B2 CP AND4 \
       CP AND4B4 CP AND3 CP AND3B3 CP AND2 CP OR2
-EN work/timer 1700072590 \
+EN work/timer 1700163721 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/timer/BEHAVIORAL 1700072591 \
+AR work/timer/BEHAVIORAL 1700163722 \
       FL C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf \
-      EN work/timer 1700072590 CP digi_clk CP CB4CLED_MXILINX_timer \
-      CP decoderBCD4to7segments CP VCC CP OR2 CP GND CP AND4 CP CB4RE_MXILINX_timer
+      EN work/timer 1700163721 CP digi_clk CP CB4CLED_MXILINX_timer \
+      CP decoderBCD4to7segments CP VCC CP OR2 CP GND CP CB4RE_MXILINX_timer \
+      CP AND7_MXILINX_timer CP INV CP DEC_CC4_MXILINX_timer
