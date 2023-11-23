@@ -7,79 +7,17 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : timer.vhf
--- /___/   /\     Timestamp : 11/16/2023 14:41:36
+-- /___/   /\     Timestamp : 11/23/2023 00:57:14
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf -w C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf -w C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.sch
 --Design Name: timer
 --Device: spartan3e
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity DEC_CC4_MXILINX_timer is
-   port ( A0  : in    std_logic; 
-          A1  : in    std_logic; 
-          A2  : in    std_logic; 
-          A3  : in    std_logic; 
-          CIN : in    std_logic; 
-          O   : out   std_logic);
-end DEC_CC4_MXILINX_timer;
-
-architecture BEHAVIORAL of DEC_CC4_MXILINX_timer is
-   attribute BOX_TYPE   : string ;
-   signal S0     : std_logic;
-   signal XLXN_8 : std_logic;
-   component MUXCY
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
-begin
-   I_36_2 : MUXCY
-      port map (CI=>CIN,
-                DI=>XLXN_8,
-                S=>S0,
-                O=>O);
-   
-   I_36_109 : GND
-      port map (G=>XLXN_8);
-   
-   I_36_110 : AND4
-      port map (I0=>A0,
-                I1=>A1,
-                I2=>A2,
-                I3=>A3,
-                O=>S0);
-   
-end BEHAVIORAL;
-
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -842,7 +780,7 @@ entity timer is
           a        : out   std_logic; 
           amarillo : out   std_logic; 
           b        : out   std_logic; 
-          buzz     : out   std_logic; 
+          buss     : out   std_logic; 
           c        : out   std_logic; 
           d        : out   std_logic; 
           e        : out   std_logic; 
@@ -859,31 +797,31 @@ end timer;
 architecture BEHAVIORAL of timer is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_48                : std_logic;
-   signal XLXN_58                : std_logic;
-   signal XLXN_60                : std_logic;
-   signal XLXN_61                : std_logic;
-   signal XLXN_64                : std_logic;
-   signal XLXN_76                : std_logic;
-   signal XLXN_80                : std_logic;
-   signal XLXN_82                : std_logic;
-   signal XLXN_127               : std_logic;
-   signal XLXN_128               : std_logic;
-   signal buzz_DUMMY             : std_logic;
-   signal a_DUMMY                : std_logic;
-   signal b_DUMMY                : std_logic;
-   signal c_DUMMY                : std_logic;
-   signal d_DUMMY                : std_logic;
-   signal e_DUMMY                : std_logic;
-   signal f_DUMMY                : std_logic;
-   signal g_DUMMY                : std_logic;
-   signal XLXI_12_I0_openSignal  : std_logic;
-   signal XLXI_30_R_openSignal   : std_logic;
-   signal XLXI_43_A0_openSignal  : std_logic;
-   signal XLXI_43_A1_openSignal  : std_logic;
-   signal XLXI_43_A2_openSignal  : std_logic;
-   signal XLXI_43_A3_openSignal  : std_logic;
-   signal XLXI_43_CIN_openSignal : std_logic;
+   signal buzz        : std_logic;
+   signal XLXN_48     : std_logic;
+   signal XLXN_58     : std_logic;
+   signal XLXN_60     : std_logic;
+   signal XLXN_61     : std_logic;
+   signal XLXN_76     : std_logic;
+   signal XLXN_80     : std_logic;
+   signal XLXN_82     : std_logic;
+   signal XLXN_128    : std_logic;
+   signal XLXN_139    : std_logic;
+   signal XLXN_145    : std_logic;
+   signal XLXN_148    : std_logic;
+   signal XLXN_149    : std_logic;
+   signal XLXN_169    : std_logic;
+   signal XLXN_170    : std_logic;
+   signal XLXN_182    : std_logic;
+   signal red_DUMMY   : std_logic;
+   signal verde_DUMMY : std_logic;
+   signal a_DUMMY     : std_logic;
+   signal b_DUMMY     : std_logic;
+   signal c_DUMMY     : std_logic;
+   signal d_DUMMY     : std_logic;
+   signal e_DUMMY     : std_logic;
+   signal f_DUMMY     : std_logic;
+   signal g_DUMMY     : std_logic;
    component digi_clk
       port ( clk1 : in    std_logic; 
              clk  : out   std_logic);
@@ -926,13 +864,6 @@ architecture BEHAVIORAL of timer is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
    component GND
       port ( G : out   std_logic);
    end component;
@@ -967,41 +898,46 @@ architecture BEHAVIORAL of timer is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   component DEC_CC4_MXILINX_timer
-      port ( A0  : in    std_logic; 
-             A1  : in    std_logic; 
-             A2  : in    std_logic; 
-             A3  : in    std_logic; 
-             CIN : in    std_logic; 
-             O   : out   std_logic);
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
    end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
    attribute HU_SET of XLXI_5 : label is "XLXI_5_13";
    attribute HU_SET of XLXI_30 : label is "XLXI_30_14";
    attribute HU_SET of XLXI_41 : label is "XLXI_41_15";
-   attribute HU_SET of XLXI_43 : label is "XLXI_43_16";
 begin
    a <= a_DUMMY;
    b <= b_DUMMY;
-   buzz <= buzz_DUMMY;
    c <= c_DUMMY;
    d <= d_DUMMY;
    e <= e_DUMMY;
    f <= f_DUMMY;
    g <= g_DUMMY;
+   red <= red_DUMMY;
+   verde <= verde_DUMMY;
    XLXI_4 : digi_clk
       port map (clk1=>clk,
-                clk=>buzz_DUMMY);
+                clk=>buzz);
    
    XLXI_5 : CB4CLED_MXILINX_timer
-      port map (C=>buzz_DUMMY,
+      port map (C=>buzz,
                 CE=>XLXN_48,
-                CLR=>XLXN_64,
+                CLR=>reset,
                 D0=>XLXN_80,
                 D1=>XLXN_76,
                 D2=>XLXN_76,
                 D3=>XLXN_80,
-                L=>XLXN_127,
+                L=>XLXN_182,
                 UP=>dir,
                 CEO=>led1,
                 Q0=>XLXN_58,
@@ -1026,11 +962,6 @@ begin
    XLXI_10 : VCC
       port map (P=>XLXN_48);
    
-   XLXI_12 : OR2
-      port map (I0=>XLXI_12_I0_openSignal,
-                I1=>reset,
-                O=>XLXN_64);
-   
    XLXI_16 : VCC
       port map (P=>XLXN_80);
    
@@ -1038,13 +969,13 @@ begin
       port map (G=>XLXN_76);
    
    XLXI_30 : CB4RE_MXILINX_timer
-      port map (C=>XLXN_127,
+      port map (C=>XLXN_182,
                 CE=>XLXN_80,
-                R=>XLXI_30_R_openSignal,
+                R=>XLXN_170,
                 CEO=>op2,
-                Q0=>red,
-                Q1=>amarillo,
-                Q2=>verde,
+                Q0=>XLXN_149,
+                Q1=>XLXN_148,
+                Q2=>open,
                 Q3=>open,
                 TC=>op1);
    
@@ -1056,19 +987,49 @@ begin
                 I4=>d_DUMMY,
                 I5=>e_DUMMY,
                 I6=>f_DUMMY,
-                O=>XLXN_127);
+                O=>XLXN_182);
    
    XLXI_42 : INV
       port map (I=>g_DUMMY,
                 O=>XLXN_128);
    
-   XLXI_43 : DEC_CC4_MXILINX_timer
-      port map (A0=>XLXI_43_A0_openSignal,
-                A1=>XLXI_43_A1_openSignal,
-                A2=>XLXI_43_A2_openSignal,
-                A3=>XLXI_43_A3_openSignal,
-                CIN=>XLXI_43_CIN_openSignal,
-                O=>open);
+   XLXI_49 : INV
+      port map (I=>XLXN_148,
+                O=>XLXN_145);
+   
+   XLXI_50 : INV
+      port map (I=>XLXN_149,
+                O=>XLXN_139);
+   
+   XLXI_53 : AND2
+      port map (I0=>XLXN_145,
+                I1=>XLXN_139,
+                O=>amarillo);
+   
+   XLXI_54 : AND2
+      port map (I0=>XLXN_145,
+                I1=>XLXN_149,
+                O=>red_DUMMY);
+   
+   XLXI_55 : AND2
+      port map (I0=>XLXN_148,
+                I1=>XLXN_139,
+                O=>verde_DUMMY);
+   
+   XLXI_61 : AND2
+      port map (I0=>XLXN_182,
+                I1=>verde_DUMMY,
+                O=>XLXN_169);
+   
+   XLXI_62 : OR2
+      port map (I0=>reset,
+                I1=>XLXN_169,
+                O=>XLXN_170);
+   
+   XLXI_63 : AND2
+      port map (I0=>buzz,
+                I1=>red_DUMMY,
+                O=>buss);
    
 end BEHAVIORAL;
 

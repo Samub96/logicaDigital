@@ -9,14 +9,14 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Nov 16 14:41:55 2023
+Mapped Date    : Thu Nov 23 00:57:33 2023
 
 Mapping design into LUTs...
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_127 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_182 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -28,14 +28,14 @@ Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:            41 out of   9,312    1%
-  Number of 4 input LUTs:                31 out of   9,312    1%
+  Number of 4 input LUTs:                36 out of   9,312    1%
 Logic Distribution:
-  Number of occupied Slices:             34 out of   4,656    1%
-    Number of Slices containing only related logic:      34 out of      34 100%
-    Number of Slices containing unrelated logic:          0 out of      34   0%
+  Number of occupied Slices:             37 out of   4,656    1%
+    Number of Slices containing only related logic:      37 out of      37 100%
+    Number of Slices containing unrelated logic:          0 out of      37   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          62 out of   9,312    1%
-    Number used as logic:                31
+  Total Number of 4 input LUTs:          67 out of   9,312    1%
+    Number used as logic:                36
     Number used as a route-thru:         31
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -45,10 +45,10 @@ Logic Distribution:
   Number of BUFGMUXs:                     1 out of      24    4%
 
   Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                2.79
+Average Fanout of Non-Clock Nets:                2.81
 
-Peak Memory Usage:  4403 MB
-Total REAL time to MAP completion:  2 secs 
+Peak Memory Usage:  4404 MB
+Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:

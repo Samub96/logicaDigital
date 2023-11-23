@@ -44,7 +44,7 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-buzz        |    7.607(R)|clk_BUFGP         |   0.000|
+buss        |   10.261(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -52,19 +52,19 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.328|         |         |         |
+clk            |    5.197|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-dir            |led1           |    9.594|
-dir            |led2           |    9.292|
+dir            |led1           |    9.865|
+dir            |led2           |    9.865|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Nov 16 14:42:15 2023 
+Analysis completed Thu Nov 23 00:57:50 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:

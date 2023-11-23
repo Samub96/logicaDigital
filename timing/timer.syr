@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: timer.prj
 
@@ -104,13 +104,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd" in Library work.
+Compiling vhdl file "C:/Users/Admin/Desktop/logica/logicaDigital/timing/digi_clk.vhd" in Library work.
 Architecture behavioral of Entity digi_clk is up to date.
-Compiling vhdl file "C:/Users/Family/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd" in Library work.
+Compiling vhdl file "C:/Users/Admin/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd" in Library work.
 Architecture arch of Entity decoderbcd4to7segments is up to date.
-Compiling vhdl file "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf" in Library work.
-Entity <dec_cc4_mxilinx_timer> compiled.
-Entity <dec_cc4_mxilinx_timer> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" in Library work.
 Entity <and7_mxilinx_timer> compiled.
 Entity <and7_mxilinx_timer> (Architecture <behavioral>) compiled.
 Entity <ftrse_mxilinx_timer> compiled.
@@ -143,8 +141,6 @@ Analyzing hierarchy for entity <CB4RE_MXILINX_timer> in library <work> (architec
 
 Analyzing hierarchy for entity <AND7_MXILINX_timer> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DEC_CC4_MXILINX_timer> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <FTCLEX_MXILINX_timer> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
@@ -161,15 +157,14 @@ Analyzing hierarchy for entity <FTRSE_MXILINX_timer> in library <work> (architec
 =========================================================================
 Analyzing Entity <timer> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  XLXI_5_13" for instance <XLXI_5> in unit <timer>.
-WARNING:Xst:753 - "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf" line 1040: Unconnected output port 'Q3' of component 'CB4RE_MXILINX_timer'.
+WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 971: Unconnected output port 'Q2' of component 'CB4RE_MXILINX_timer'.
+WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 971: Unconnected output port 'Q3' of component 'CB4RE_MXILINX_timer'.
     Set user-defined property "HU_SET =  XLXI_30_14" for instance <XLXI_30> in unit <timer>.
     Set user-defined property "HU_SET =  XLXI_41_15" for instance <XLXI_41> in unit <timer>.
-WARNING:Xst:753 - "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf" line 1065: Unconnected output port 'O' of component 'DEC_CC4_MXILINX_timer'.
-    Set user-defined property "HU_SET =  XLXI_43_16" for instance <XLXI_43> in unit <timer>.
 Entity <timer> analyzed. Unit <timer> generated.
 
 Analyzing Entity <digi_clk> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd" line 18: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/digi_clk.vhd" line 18: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <b>
 Entity <digi_clk> analyzed. Unit <digi_clk> generated.
 
@@ -218,9 +213,6 @@ Analyzing Entity <AND7_MXILINX_timer> in library <work> (Architecture <behaviora
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_110> in unit <AND7_MXILINX_timer>.
 Entity <AND7_MXILINX_timer> analyzed. Unit <AND7_MXILINX_timer> generated.
 
-Analyzing Entity <DEC_CC4_MXILINX_timer> in library <work> (Architecture <behavioral>).
-Entity <DEC_CC4_MXILINX_timer> analyzed. Unit <DEC_CC4_MXILINX_timer> generated.
-
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -229,7 +221,7 @@ Entity <DEC_CC4_MXILINX_timer> analyzed. Unit <DEC_CC4_MXILINX_timer> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <digi_clk>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/digi_clk.vhd".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/digi_clk.vhd".
     Found 1-bit register for signal <b>.
     Found 32-bit up counter for signal <count>.
     Summary:
@@ -239,7 +231,7 @@ Unit <digi_clk> synthesized.
 
 
 Synthesizing Unit <decoderBCD4to7segments>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/decoderBCD4to7segments.vhd".
     Found 16x7-bit ROM for signal <auxVectOut$mux0009> created at line 27.
     Summary:
 	inferred   1 ROM(s).
@@ -247,54 +239,42 @@ Unit <decoderBCD4to7segments> synthesized.
 
 
 Synthesizing Unit <AND7_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <AND7_MXILINX_timer> synthesized.
 
 
-Synthesizing Unit <DEC_CC4_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
-Unit <DEC_CC4_MXILINX_timer> synthesized.
-
-
 Synthesizing Unit <M2_1_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <M2_1_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <M2_1B1_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <M2_1B1_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <FTRSE_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <FTRSE_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <CB4RE_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <CB4RE_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <FTCLEX_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <FTCLEX_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <CB4CLED_MXILINX_timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <CB4CLED_MXILINX_timer> synthesized.
 
 
 Synthesizing Unit <timer>.
-    Related source file is "C:/Users/Family/Desktop/logica/logicaDigital/timing/timer.vhf".
-WARNING:Xst:653 - Signal <XLXI_43_CIN_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_43_A3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_43_A2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_43_A1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_43_A0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_30_R_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_12_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Related source file is "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf".
 Unit <timer> synthesized.
 
 
@@ -336,8 +316,6 @@ Macro Statistics
 Optimizing unit <timer> ...
 
 Optimizing unit <AND7_MXILINX_timer> ...
-
-Optimizing unit <DEC_CC4_MXILINX_timer> ...
 
 Optimizing unit <M2_1_MXILINX_timer> ...
 
@@ -391,19 +369,19 @@ Design Statistics
 # IOs                              : 18
 
 Cell Usage :
-# BELS                             : 183
-#      AND2                        : 12
+# BELS                             : 187
+#      AND2                        : 17
 #      AND2B1                      : 7
 #      AND2B2                      : 2
 #      AND3                        : 2
 #      AND3B3                      : 1
-#      AND4                        : 5
+#      AND4                        : 4
 #      AND4B4                      : 1
-#      GND                         : 3
-#      INV                         : 3
+#      GND                         : 2
+#      INV                         : 5
 #      LUT1                        : 31
 #      LUT4                        : 15
-#      MUXCY                       : 40
+#      MUXCY                       : 39
 #      OR2                         : 18
 #      VCC                         : 3
 #      XOR2                        : 8
@@ -427,9 +405,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       25  out of   4656     0%  
+ Number of Slices:                       26  out of   4656     0%  
  Number of Slice Flip Flops:             41  out of   9312     0%  
- Number of 4 input LUTs:                 49  out of   9312     0%  
+ Number of 4 input LUTs:                 51  out of   9312     0%  
  Number of IOs:                          18
  Number of bonded IOBs:                  18  out of    232     7%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -466,11 +444,11 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+--------------------------+-------+
-Control Signal                     | Buffer(FF name)          | Load  |
------------------------------------+--------------------------+-------+
-XLXN_64(XLXI_12:O)                 | NONE(XLXI_5/I_Q0/I_36_35)| 4     |
------------------------------------+--------------------------+-------+
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 4     |
+-----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
@@ -517,10 +495,10 @@ Delay:               5.240ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_41/O_DUMMY'
-  Clock period: 4.940ns (frequency: 202.429MHz)
-  Total number of paths / destination ports: 10 / 4
+  Clock period: 6.927ns (frequency: 144.363MHz)
+  Total number of paths / destination ports: 18 / 8
 -------------------------------------------------------------------------
-Delay:               4.940ns (Levels of Logic = 4)
+Delay:               6.927ns (Levels of Logic = 6)
   Source:            XLXI_30/I_Q0/I_36_35 (FF)
   Destination:       XLXI_30/I_Q3/I_36_35 (FF)
   Source Clock:      XLXI_41/O_DUMMY rising
@@ -530,16 +508,19 @@ Delay:               4.940ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             6   0.591   0.669  I_36_35 (Q)
+     FDRE:C->Q             7   0.591   0.708  I_36_35 (Q)
      end scope: 'I_Q0'
-     AND3:I2->O            1   0.704   0.420  I_36_32 (T3)
+     end scope: 'XLXI_30'
+     INV:I->O              2   0.704   0.447  XLXI_50 (XLXN_139)
+     AND2:I1->O            2   0.704   0.447  XLXI_55 (verde_OBUF)
+     AND2:I1->O            1   0.704   0.420  XLXI_61 (XLXN_169)
+     OR2:I1->O             4   0.704   0.587  XLXI_62 (XLXN_170)
+     begin scope: 'XLXI_30'
      begin scope: 'I_Q3'
-     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
-     OR2:I1->O             1   0.704   0.420  I_36_73 (D_S)
-     FDRE:D                    0.308          I_36_35
+     FDRE:R                    0.911          I_36_35
     ----------------------------------------
-    Total                      4.940ns (3.011ns logic, 1.929ns route)
-                                       (61.0% logic, 39.0% route)
+    Total                      6.927ns (4.318ns logic, 2.609ns route)
+                                       (62.3% logic, 37.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_4/b'
@@ -573,6 +554,28 @@ Delay:               8.677ns (Levels of Logic = 9)
     ----------------------------------------
     Total                      8.677ns (5.123ns logic, 3.554ns route)
                                        (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_41/O_DUMMY'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.053ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       XLXI_30/I_Q3/I_36_35 (FF)
+  Destination Clock: XLXI_41/O_DUMMY rising
+
+  Data Path: reset to XLXI_30/I_Q3/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.633  reset_IBUF (reset_IBUF)
+     OR2:I0->O             4   0.704   0.587  XLXI_62 (XLXN_170)
+     begin scope: 'XLXI_30'
+     begin scope: 'I_Q3'
+     FDRE:R                    0.911          I_36_35
+    ----------------------------------------
+    Total                      4.053ns (2.833ns logic, 1.220ns route)
+                                       (69.9% logic, 30.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_4/b'
@@ -635,43 +638,45 @@ Offset:              9.420ns (Levels of Logic = 7)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.532ns (Levels of Logic = 1)
+Offset:              5.656ns (Levels of Logic = 2)
   Source:            XLXI_4/b (FF)
-  Destination:       buzz (PAD)
+  Destination:       buss (PAD)
   Source Clock:      clk rising
 
-  Data Path: XLXI_4/b to buzz
+  Data Path: XLXI_4/b to buss
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              6   0.591   0.669  XLXI_4/b (XLXI_4/b)
-     OBUF:I->O                 3.272          buzz_OBUF (buzz)
+     AND2:I0->O            1   0.704   0.420  XLXI_63 (buss_OBUF)
+     OBUF:I->O                 3.272          buss_OBUF (buss)
     ----------------------------------------
-    Total                      4.532ns (3.863ns logic, 0.669ns route)
-                                       (85.2% logic, 14.8% route)
+    Total                      5.656ns (4.567ns logic, 1.089ns route)
+                                       (80.7% logic, 19.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_41/O_DUMMY'
-  Total number of paths / destination ports: 11 / 5
+  Total number of paths / destination ports: 16 / 6
 -------------------------------------------------------------------------
-Offset:              6.807ns (Levels of Logic = 4)
-  Source:            XLXI_30/I_Q0/I_36_35 (FF)
-  Destination:       op2 (PAD)
+Offset:              7.958ns (Levels of Logic = 5)
+  Source:            XLXI_30/I_Q1/I_36_35 (FF)
+  Destination:       buss (PAD)
   Source Clock:      XLXI_41/O_DUMMY rising
 
-  Data Path: XLXI_30/I_Q0/I_36_35 to op2
+  Data Path: XLXI_30/I_Q1/I_36_35 to buss
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             6   0.591   0.669  I_36_35 (Q)
-     end scope: 'I_Q0'
-     AND4:I3->O            2   0.704   0.447  I_36_31 (TC)
-     AND2:I1->O            1   0.704   0.420  I_36_69 (CEO)
+     end scope: 'I_Q1'
      end scope: 'XLXI_30'
-     OBUF:I->O                 3.272          op2_OBUF (op2)
+     INV:I->O              2   0.704   0.447  XLXI_49 (XLXN_145)
+     AND2:I0->O            2   0.704   0.447  XLXI_54 (red_OBUF)
+     AND2:I1->O            1   0.704   0.420  XLXI_63 (buss_OBUF)
+     OBUF:I->O                 3.272          buss_OBUF (buss)
     ----------------------------------------
-    Total                      6.807ns (5.271ns logic, 1.536ns route)
-                                       (77.4% logic, 22.6% route)
+    Total                      7.958ns (5.975ns logic, 1.983ns route)
+                                       (75.1% logic, 24.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -701,14 +706,14 @@ Delay:               8.646ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.43 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.10 secs
  
 --> 
 
-Total memory usage is 4530760 kilobytes
+Total memory usage is 4531144 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

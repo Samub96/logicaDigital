@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Family\Desktop\logica\logicaDigital\timing\timer.ncd
-OUTFILE=C:\Users\Family\Desktop\logica\logicaDigital\timing\timer.bit
+INFILE=C:\Users\Admin\Desktop\logica\logicaDigital\timing\timer.ncd
+OUTFILE=C:\Users\Admin\Desktop\logica\logicaDigital\timing\timer.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\Family\Desktop\logica\logicaDigital\timing
+WORKINGDIR=C:\Users\Admin\Desktop\logica\logicaDigital\timing
 LICENSE=WebPack
 USER_INFO=210703355_0_0_935
