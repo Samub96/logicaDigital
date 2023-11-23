@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : timer.vhf
--- /___/   /\     Timestamp : 11/23/2023 00:57:14
+-- /___/   /\     Timestamp : 11/23/2023 01:25:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -813,6 +813,8 @@ architecture BEHAVIORAL of timer is
    signal XLXN_169    : std_logic;
    signal XLXN_170    : std_logic;
    signal XLXN_182    : std_logic;
+   signal led1_DUMMY  : std_logic;
+   signal led2_DUMMY  : std_logic;
    signal red_DUMMY   : std_logic;
    signal verde_DUMMY : std_logic;
    signal a_DUMMY     : std_logic;
@@ -912,6 +914,14 @@ architecture BEHAVIORAL of timer is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
+   component AND3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   
    attribute HU_SET of XLXI_5 : label is "XLXI_5_13";
    attribute HU_SET of XLXI_30 : label is "XLXI_30_14";
    attribute HU_SET of XLXI_41 : label is "XLXI_41_15";
@@ -923,6 +933,8 @@ begin
    e <= e_DUMMY;
    f <= f_DUMMY;
    g <= g_DUMMY;
+   led1 <= led1_DUMMY;
+   led2 <= led2_DUMMY;
    red <= red_DUMMY;
    verde <= verde_DUMMY;
    XLXI_4 : digi_clk
@@ -939,12 +951,12 @@ begin
                 D3=>XLXN_80,
                 L=>XLXN_182,
                 UP=>dir,
-                CEO=>led1,
+                CEO=>led1_DUMMY,
                 Q0=>XLXN_58,
                 Q1=>XLXN_60,
                 Q2=>XLXN_61,
                 Q3=>XLXN_82,
-                TC=>led2);
+                TC=>led2_DUMMY);
    
    XLXI_8 : decoderBCD4to7segments
       port map (x0=>XLXN_58,
@@ -1016,11 +1028,6 @@ begin
                 I1=>XLXN_139,
                 O=>verde_DUMMY);
    
-   XLXI_61 : AND2
-      port map (I0=>XLXN_182,
-                I1=>verde_DUMMY,
-                O=>XLXN_169);
-   
    XLXI_62 : OR2
       port map (I0=>reset,
                 I1=>XLXN_169,
@@ -1030,6 +1037,12 @@ begin
       port map (I0=>buzz,
                 I1=>red_DUMMY,
                 O=>buss);
+   
+   XLXI_68 : AND3
+      port map (I0=>led1_DUMMY,
+                I1=>led2_DUMMY,
+                I2=>verde_DUMMY,
+                O=>XLXN_169);
    
 end BEHAVIORAL;
 

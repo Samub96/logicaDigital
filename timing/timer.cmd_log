@@ -186,3 +186,15 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o timer_m
 par -w -intstyle ise -ol high -t 1 timer_map.ncd timer.ncd timer.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml timer.twx timer.ncd -o timer.twr timer.pcf -ucf test.ucf 
 bitgen -intstyle ise -f timer.ut timer.ncd 
+xst -intstyle ise -ifn "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.xst" -ofn "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s500e-fg320-4 timer.ngc timer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o timer_map.ncd timer.ngd timer.pcf 
+par -w -intstyle ise -ol high -t 1 timer_map.ncd timer.ncd timer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml timer.twx timer.ncd -o timer.twr timer.pcf -ucf test.ucf 
+bitgen -intstyle ise -f timer.ut timer.ncd 
+xst -intstyle ise -ifn "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.xst" -ofn "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s500e-fg320-4 timer.ngc timer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o timer_map.ncd timer.ngd timer.pcf 
+par -w -intstyle ise -ol high -t 1 timer_map.ncd timer.ncd timer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml timer.twx timer.ncd -o timer.twr timer.pcf -ucf test.ucf 
+bitgen -intstyle ise -f timer.ut timer.ncd 

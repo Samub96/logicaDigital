@@ -62,6 +62,9 @@
         <signal name="XLXN_180" />
         <signal name="buss" />
         <signal name="XLXN_182" />
+        <signal name="XLXN_184" />
+        <signal name="XLXN_187" />
+        <signal name="XLXN_188" />
         <port polarity="Input" name="clk" />
         <port polarity="Output" name="b" />
         <port polarity="Output" name="c" />
@@ -350,10 +353,12 @@
         </branch>
         <instance x="2464" y="1744" name="XLXI_5" orien="R0" />
         <branch name="led1">
-            <wire x2="2880" y1="1552" y2="1552" x1="2848" />
+            <wire x2="2944" y1="1552" y2="1552" x1="2848" />
+            <wire x2="3056" y1="1552" y2="1552" x1="2944" />
         </branch>
         <branch name="led2">
-            <wire x2="2880" y1="1616" y2="1616" x1="2848" />
+            <wire x2="2912" y1="1616" y2="1616" x1="2848" />
+            <wire x2="3040" y1="1616" y2="1616" x1="2912" />
         </branch>
         <branch name="XLXN_61">
             <wire x2="3088" y1="1232" y2="1232" x1="2848" />
@@ -410,8 +415,6 @@
             <wire x2="3088" y1="1136" y2="1296" x1="3088" />
         </branch>
         <iomarker fontsize="28" x="2432" y="1424" name="dir" orien="R180" />
-        <iomarker fontsize="28" x="2880" y="1552" name="led1" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1616" name="led2" orien="R0" />
         <iomarker fontsize="28" x="2432" y="2096" name="reset" orien="R90" />
         <iomarker fontsize="28" x="3984" y="1456" name="f" orien="R0" />
         <iomarker fontsize="28" x="4112" y="1392" name="e" orien="R0" />
@@ -445,7 +448,8 @@
             <wire x2="1072" y1="480" y2="480" x1="944" />
         </branch>
         <branch name="verde">
-            <wire x2="224" y1="528" y2="656" x1="224" />
+            <wire x2="224" y1="528" y2="640" x1="224" />
+            <wire x2="224" y1="640" y2="656" x1="224" />
         </branch>
         <iomarker fontsize="28" x="224" y="528" name="verde" orien="R270" />
         <instance x="1120" y="1024" name="XLXI_50" orien="R180" />
@@ -498,10 +502,8 @@
             <wire x2="2432" y1="1712" y2="2096" x1="2432" />
         </branch>
         <branch name="XLXN_169">
-            <wire x2="1424" y1="1952" y2="2048" x1="1424" />
-            <wire x2="3056" y1="2048" y2="2048" x1="1424" />
-            <wire x2="3056" y1="480" y2="480" x1="2000" />
-            <wire x2="3056" y1="480" y2="2048" x1="3056" />
+            <wire x2="1424" y1="1968" y2="1968" x1="832" />
+            <wire x2="1424" y1="1952" y2="1968" x1="1424" />
         </branch>
         <instance x="1552" y="1952" name="XLXI_62" orien="R270" />
         <branch name="XLXN_170">
@@ -538,5 +540,7 @@
             <wire x2="2224" y1="1616" y2="1616" x1="2208" />
         </branch>
         <instance x="1072" y="608" name="XLXI_63" orien="R0" />
+        <iomarker fontsize="28" x="3040" y="1616" name="led2" orien="R0" />
+        <iomarker fontsize="28" x="3056" y="1552" name="led1" orien="R0" />
     </sheet>
 </drawing>

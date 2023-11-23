@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.63 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.65 secs
  
 --> Reading design: timer.prj
 
@@ -157,8 +157,8 @@ Analyzing hierarchy for entity <FTRSE_MXILINX_timer> in library <work> (architec
 =========================================================================
 Analyzing Entity <timer> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  XLXI_5_13" for instance <XLXI_5> in unit <timer>.
-WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 971: Unconnected output port 'Q2' of component 'CB4RE_MXILINX_timer'.
-WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 971: Unconnected output port 'Q3' of component 'CB4RE_MXILINX_timer'.
+WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 983: Unconnected output port 'Q2' of component 'CB4RE_MXILINX_timer'.
+WARNING:Xst:753 - "C:/Users/Admin/Desktop/logica/logicaDigital/timing/timer.vhf" line 983: Unconnected output port 'Q3' of component 'CB4RE_MXILINX_timer'.
     Set user-defined property "HU_SET =  XLXI_30_14" for instance <XLXI_30> in unit <timer>.
     Set user-defined property "HU_SET =  XLXI_41_15" for instance <XLXI_41> in unit <timer>.
 Entity <timer> analyzed. Unit <timer> generated.
@@ -370,10 +370,10 @@ Design Statistics
 
 Cell Usage :
 # BELS                             : 187
-#      AND2                        : 17
+#      AND2                        : 16
 #      AND2B1                      : 7
 #      AND2B2                      : 2
-#      AND3                        : 2
+#      AND3                        : 3
 #      AND3B3                      : 1
 #      AND4                        : 4
 #      AND4B4                      : 1
@@ -455,9 +455,9 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 8.677ns (Maximum Frequency: 115.247MHz)
-   Minimum input arrival time before clock: 7.903ns
-   Maximum output required time after clock: 9.420ns
-   Maximum combinational path delay: 8.646ns
+   Minimum input arrival time before clock: 8.811ns
+   Maximum output required time after clock: 9.531ns
+   Maximum combinational path delay: 8.757ns
 
 Timing Detail:
 --------------
@@ -513,7 +513,7 @@ Delay:               6.927ns (Levels of Logic = 6)
      end scope: 'XLXI_30'
      INV:I->O              2   0.704   0.447  XLXI_50 (XLXN_139)
      AND2:I1->O            2   0.704   0.447  XLXI_55 (verde_OBUF)
-     AND2:I1->O            1   0.704   0.420  XLXI_61 (XLXN_169)
+     AND3:I2->O            1   0.704   0.420  XLXI_68 (XLXN_169)
      OR2:I1->O             4   0.704   0.587  XLXI_62 (XLXN_170)
      begin scope: 'XLXI_30'
      begin scope: 'I_Q3'
@@ -557,25 +557,33 @@ Delay:               8.677ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_41/O_DUMMY'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 20 / 4
 -------------------------------------------------------------------------
-Offset:              4.053ns (Levels of Logic = 3)
-  Source:            reset (PAD)
+Offset:              8.811ns (Levels of Logic = 9)
+  Source:            dir (PAD)
   Destination:       XLXI_30/I_Q3/I_36_35 (FF)
   Destination Clock: XLXI_41/O_DUMMY rising
 
-  Data Path: reset to XLXI_30/I_Q3/I_36_35
+  Data Path: dir to XLXI_30/I_Q3/I_36_35
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.218   0.633  reset_IBUF (reset_IBUF)
-     OR2:I0->O             4   0.704   0.587  XLXI_62 (XLXN_170)
+     IBUF:I->O             8   1.218   0.757  dir_IBUF (dir_IBUF)
+     begin scope: 'XLXI_5'
+     begin scope: 'I_TC'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             3   0.704   0.531  I_36_8 (O)
+     end scope: 'I_TC'
+     AND2:I1->O            2   0.704   0.447  I_36_50 (CEO)
+     end scope: 'XLXI_5'
+     AND3:I0->O            1   0.704   0.420  XLXI_68 (XLXN_169)
+     OR2:I1->O             4   0.704   0.587  XLXI_62 (XLXN_170)
      begin scope: 'XLXI_30'
      begin scope: 'I_Q3'
      FDRE:R                    0.911          I_36_35
     ----------------------------------------
-    Total                      4.053ns (2.833ns logic, 1.220ns route)
-                                       (69.9% logic, 30.1% route)
+    Total                      8.811ns (5.649ns logic, 3.162ns route)
+                                       (64.1% logic, 35.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_4/b'
@@ -611,7 +619,7 @@ Offset:              7.903ns (Levels of Logic = 9)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_4/b'
   Total number of paths / destination ports: 44 / 9
 -------------------------------------------------------------------------
-Offset:              9.420ns (Levels of Logic = 7)
+Offset:              9.531ns (Levels of Logic = 7)
   Source:            XLXI_5/I_Q0/I_36_35 (FF)
   Destination:       led1 (PAD)
   Source Clock:      XLXI_4/b rising
@@ -625,14 +633,14 @@ Offset:              9.420ns (Levels of Logic = 7)
      AND4:I3->O            1   0.704   0.420  I_36_10 (TC_UP)
      begin scope: 'I_TC'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O             2   0.704   0.447  I_36_8 (O)
+     OR2:I0->O             3   0.704   0.531  I_36_8 (O)
      end scope: 'I_TC'
-     AND2:I1->O            1   0.704   0.420  I_36_50 (CEO)
+     AND2:I1->O            2   0.704   0.447  I_36_50 (CEO)
      end scope: 'XLXI_5'
      OBUF:I->O                 3.272          led1_OBUF (led1)
     ----------------------------------------
-    Total                      9.420ns (6.679ns logic, 2.741ns route)
-                                       (70.9% logic, 29.1% route)
+    Total                      9.531ns (6.679ns logic, 2.852ns route)
+                                       (70.1% logic, 29.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -682,7 +690,7 @@ Offset:              7.958ns (Levels of Logic = 5)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 2
 -------------------------------------------------------------------------
-Delay:               8.646ns (Levels of Logic = 7)
+Delay:               8.757ns (Levels of Logic = 7)
   Source:            dir (PAD)
   Destination:       led1 (PAD)
 
@@ -694,20 +702,20 @@ Delay:               8.646ns (Levels of Logic = 7)
      begin scope: 'XLXI_5'
      begin scope: 'I_TC'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             2   0.704   0.447  I_36_8 (O)
+     OR2:I1->O             3   0.704   0.531  I_36_8 (O)
      end scope: 'I_TC'
-     AND2:I1->O            1   0.704   0.420  I_36_50 (CEO)
+     AND2:I1->O            2   0.704   0.447  I_36_50 (CEO)
      end scope: 'XLXI_5'
      OBUF:I->O                 3.272          led1_OBUF (led1)
     ----------------------------------------
-    Total                      8.646ns (6.602ns logic, 2.044ns route)
-                                       (76.4% logic, 23.6% route)
+    Total                      8.757ns (6.602ns logic, 2.155ns route)
+                                       (75.4% logic, 24.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.10 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.21 secs
  
 --> 
 
