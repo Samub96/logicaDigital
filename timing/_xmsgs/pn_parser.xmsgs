@@ -8,6 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Admin/Desktop/logica/logicaDigital/timing/Semaforo.vhd&quot; into library work</arg>
 </msg>
 
@@ -18,6 +19,12 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Admin/Desktop/logica/logicaDigital/timing/digi_clk.vhd&quot; into library work</arg>
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/decoderBCD4to7segments.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/1110362035/Desktop/logicaDigital-main/logicaDigital-main/timing/digi_clk.vhd&quot; into library work</arg>
+>>>>>>> 819bd86b72379791e14882437b5056546cd31f5d
 </msg>
 
 </messages>
